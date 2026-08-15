@@ -11,7 +11,6 @@ int main()
         return 1;
     }
 
-    // Generate data
     for(int n = 1; n <= 10; n++)
     {
         int moves = (1 << n) - 1;
@@ -20,7 +19,6 @@ int main()
 
     fclose(fp);
 
-    // Open GNUplot
     FILE *gnuplot = _popen("gnuplot -persistent", "w");
 
     if(gnuplot == NULL)
