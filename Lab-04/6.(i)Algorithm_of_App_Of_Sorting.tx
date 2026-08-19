@@ -1,0 +1,25 @@
+Algorithm
+Algorithm: Point Covered by Maximum Number of Intervals
+
+Input: n intervals (li, ri).
+
+Output: A point p that lies in the maximum number of intervals.
+
+Start
+Read n.
+For every interval (li, ri):
+Create an event (li, +1).
+Create an event (ri, -1).
+Sort all 2n events by their position.
+Set:
+current = 0
+maximum = 0
+maxPoint = 0
+Traverse the sorted events:
+If the event is a starting point, increase current.
+If the event is an ending point, decrease current.
+If current > maximum:
+Set maximum = current.
+Set maxPoint = event.position.
+Print maxPoint and maximum.
+Stop.

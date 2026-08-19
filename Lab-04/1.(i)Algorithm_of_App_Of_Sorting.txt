@@ -1,21 +1,51 @@
-O(n) algorithm
 
-1.Since there are only three colours, create three separate arrays:
+## Algorithm: Sort Items by Colour
 
-red[]
-blue[]
-yellow[]
+Input: `n` pairs of items, where each pair contains a number and a colour (`R`, `B`, or `Y`). The items are already sorted by number.
 
-2.Scan the original array once:
+Output: Items sorted by colour in the order Red → Blue → Yellow, while maintaining the sorted order of numbers within each colour.
 
-for each item:
-    if colour == RED:
-        put it in red[]
-    else if colour == BLUE:
-        put it in blue[]
-    else:
-        put it in yellow[]
+### Algorithm
 
-3.Then concatenate:
+1. Start
+2. Read `n`, the number of items.
+3. Read the `n` pairs `(number, colour)` into an array.
+4. Create three separate arrays:
 
-red[] + blue[] + yellow[]
+   `red[]`
+   `blue[]`
+   `yellow[]`
+5. Traverse the input array from left to right:
+
+   If the colour is `R`, insert the item into `red[]`.
+   If the colour is `B`, insert the item into `blue[]`.
+   If the colour is `Y`, insert the item into `yellow[]`.
+6. Since the input was already sorted by number and we traverse it from left to right, the numbers inside each colour array remain sorted.
+7. Copy the elements of `red[]` into the original array.
+8. Append the elements of `blue[]`.
+9. Append the elements of `yellow[]`.
+10. Display the resulting array.
+11. Stop.
+
+### Example
+Input:
+(1,B) (2,R) (3,Y) (4,R) (5,B) (6,Y)
+
+Red:
+(2,R) (4,R)
+
+Blue:
+(1,B) (5,B)
+
+Yellow:
+(3,Y) (6,Y)
+
+Output:
+(2,R) (4,R) (1,B) (5,B) (3,Y) (6,Y)
+
+### Complexity
+The array is traversed once to separate the colours and once to combine them.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+

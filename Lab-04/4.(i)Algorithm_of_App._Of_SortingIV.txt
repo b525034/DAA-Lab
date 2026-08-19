@@ -1,0 +1,26 @@
+Algorithm: Maximum Number of People at a Party
+
+Input: Entry time ai and exit time bi for each of n people.
+
+Output: The time when the maximum number of people were simultaneously present.
+
+Start
+Read n.
+For each person:
+Read entry time ai.
+Read exit time bi.
+Store (ai, +1) as an entry event.
+Store (bi, -1) as an exit event.
+Sort all 2n events according to their time.
+Set:
+current = 0
+maximum = 0
+maxTime = 0
+Traverse the sorted events:
+If the event is an entry, increase current by 1.
+If the event is an exit, decrease current by 1.
+If current > maximum:
+Set maximum = current.
+Set maxTime = event.time.
+Display maxTime and maximum.
+Stop.

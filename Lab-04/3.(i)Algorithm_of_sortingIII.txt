@@ -1,0 +1,25 @@
+Algorithm
+Algorithm: K-SUM(S, n, k, T)
+
+Input: A set S of n integers, integer k, and target T.
+
+Output: Whether k elements of S add up to T.
+
+Start
+Read n, k, and T.
+Read the n elements of S.
+Sort S in ascending order.
+Generate all combinations of k-1 elements from S.
+For each combination:
+Calculate the sum of the selected k-1 elements.
+
+Calculate:
+
+required = T - sum
+Perform binary search for required in the elements after the last selected element.
+If required is found:
+Display the k elements.
+Return YES.
+If all combinations are checked and no valid element is found:
+Return NO.
+Stop

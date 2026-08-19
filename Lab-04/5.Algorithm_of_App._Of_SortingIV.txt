@@ -1,0 +1,22 @@
+Algorithm
+Algorithm: Merge Overlapping Intervals
+
+Input: A list of n intervals (xi, yi).
+
+Output: A list of non-overlapping intervals obtained by merging all overlapping intervals.
+
+Start
+Read n.
+Store each interval as (start, end).
+Sort all intervals according to their starting values.
+Set the first interval as the current interval.
+For every remaining interval:
+If its starting point is less than or equal to the current interval's ending point:
+Merge the intervals.
+Update the ending point to the larger of the two ending points.
+Otherwise:
+Store the current interval in the output.
+Make the new interval the current interval.
+Store the last current interval in the output.
+Display the merged intervals.
+Stop.
