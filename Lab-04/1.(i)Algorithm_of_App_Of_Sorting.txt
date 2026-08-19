@@ -1,0 +1,21 @@
+O(n) algorithm
+
+1.Since there are only three colours, create three separate arrays:
+
+red[]
+blue[]
+yellow[]
+
+2.Scan the original array once:
+
+for each item:
+    if colour == RED:
+        put it in red[]
+    else if colour == BLUE:
+        put it in blue[]
+    else:
+        put it in yellow[]
+
+3.Then concatenate:
+
+red[] + blue[] + yellow[]

@@ -48,21 +48,6 @@ void subtractMatrix(int **A, int **B, int **C, int n)
     }
 }
 
-
-/*
-   Multiplies two special-pattern matrices:
-
-             A1 A2
-        A =  A2 A1
-
-             B1 B2
-        B =  B2 B1
-
-   Result:
-
-             C1 C2
-        C =  C2 C1
-*/
 void specialMultiply(int **A, int **B, int **C, int n)
 {
     // Base case
@@ -83,16 +68,6 @@ void specialMultiply(int **A, int **B, int **C, int n)
 
     int **B1 = createMatrix(k);
     int **B2 = createMatrix(k);
-
-    /*
-       Extract A1, A2, B1, B2
-
-              A1 A2
-          A = A2 A1
-
-              B1 B2
-          B = B2 B1
-    */
 
     for (int i = 0; i < k; i++)
     {
