@@ -1,0 +1,20 @@
+Algorithm
+
+KTH-SMALLEST(A, low, high, k)
+
+Select a pivot.
+Partition the array around the pivot.
+Let the pivot index be p.
+If p == k-1, the pivot is the Kth smallest element.
+If k-1 < p, search the left subarray.
+Otherwise, search the right subarray.
+Continue until the required element is found.
+
+
+Complexity Analysis
+Case	Time Complexity
+Best	O(N)
+Average/Expected	O(N)
+Worst	O(N²)
+
+Space Complexity: O(log N) average.

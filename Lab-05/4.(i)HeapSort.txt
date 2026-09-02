@@ -1,0 +1,29 @@
+Algorithm
+
+HEAPSORT(A)
+
+Build a Max Heap from the given array.
+The largest element will be at the root.
+Exchange the root with the last element.
+Reduce the heap size by one.
+Apply heapify to restore the Max Heap.
+Repeat until only one element remains.
+The array is now sorted in ascending order.
+Algorithm for MAX-HEAPIFY
+Set largest = root.
+Find the left child.
+Find the right child.
+Compare both children with the root.
+If a child is larger, make it the new largest.
+Swap the root with the largest child.
+Continue heapifying until the heap property is restored.
+
+
+Complexity Analysis
+
+Heap Sort has a major advantage over Quick Sort: its time complexity is guaranteed.
+
+Case	Time Complexity
+Best	O(N log N)
+Average	O(N log N)
+Worst	O(N log N)

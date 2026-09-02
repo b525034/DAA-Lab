@@ -1,0 +1,25 @@
+Algorithm
+
+QUICKSORT(A, low, high)
+
+If low < high, select a pivot.
+Partition the array around the pivot.
+Elements smaller than or equal to the pivot are placed on the left.
+Elements greater than the pivot are placed on the right.
+Recursively apply Quick Sort to the left subarray.
+Recursively apply Quick Sort to the right subarray.
+Write the sorted array to the output file.
+
+
+Complexity Analysis
+
+Quick Sort has:
+
+Case	Time Complexity
+Best	O(N log N)
+Average	O(N log N)
+Worst	O(N²)
+
+The worst case occurs when the pivot repeatedly becomes the smallest or largest element.
+
+Space Complexity: O(log N) average due to recursive calls.

@@ -1,0 +1,23 @@
+Algorithm
+
+QUICKSELECT(A, low, high, k)
+
+1.Choose a pivot element.
+2.Partition the array around the pivot.
+3.Let the pivot position be p.
+4.If p == k, return A[p].
+5.If k < p, recursively search the left part.
+6.Otherwise, recursively search the right part.
+7.Repeat until the required element is found.
+
+
+Complexity Analysis
+
+Case	Time Complexity
+Best	O(N)
+Average/Expected	O(N)
+Worst	O(N²)
+
+Space Complexity: O(log N) average due to recursion.
+
+Note: The array is rearranged internally, but it is not completely sorted.

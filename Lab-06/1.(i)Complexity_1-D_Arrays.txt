@@ -1,0 +1,14 @@
+Final complexity table
+
+| No. | Operation              | Worst-case Time |
+| --- | ---------------------- | --------------: |
+| 1   | Maximum                |        O(n)     |
+| 2   | First & Second Largest |        O(n)     |
+| 3   | Mean                   |        O(n)     |
+| 4   | Median (Quickselect)   |       O(n²)     |
+| 5   | Standard Deviation     |        O(n)     |
+| 6   | Mode                   |       O(n²)     |
+| 7   | Remove Duplicates      |       O(n²)     |
+| 8   | Reverse                |        O(n)     |
+| 9   | Partition              |        O(n)     |
+

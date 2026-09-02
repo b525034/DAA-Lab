@@ -1,0 +1,10 @@
+Complexity
+
+FFT:
+
+T(n)=2T(n/2)+O(n) 
+
+Using Master Theorem:
+
+O(nlogn)
+	​
