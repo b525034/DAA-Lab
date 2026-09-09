@@ -7,7 +7,13 @@ This repository contains my Design and Analysis of Algorithms (DAA) laboratory a
 ```
 DAA-Lab
 -- Lab-01
--- .
+-- Lab-02
+-- Lab-03
+-- Lab-04
+-- Lab-05
+-- Lab-06
+-- Lab-07
+
 
 ## Tools Used
 
