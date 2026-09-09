@@ -1,0 +1,25 @@
+INVERT THE COIN TRIANGLE
+
+Let n be the number of coins in the bottom row.
+
+Total number of coins = n(n+1)/2 = O(n^2).
+
+For the exhaustive validation algorithm, possible inverted-triangle positions are checked and for each position the overlap with the original triangle is calculated.
+
+Time Complexity:
+O(n^4)
+
+Space Complexity:
+O(n^2)
+
+After deriving the mathematical formula:
+
+Minimum moves = floor(n(n+1)/6)
+
+the answer can be calculated directly.
+
+Optimized Time Complexity:
+O(1)
+
+Optimized Space Complexity:
+O(1)

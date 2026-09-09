@@ -1,0 +1,19 @@
+Let DP[e][f] represent the minimum number of droppings required using e eggs and f floors.
+
+The recurrence is:
+
+DP[e][f] = 1 + min(max(DP[e-1][k-1], DP[e][f-k]))
+
+where k ranges from 1 to f.
+
+There are E x F DP states.
+
+For each state, up to F possible values of k are checked.
+
+Time Complexity:
+O(EF^2)
+
+Space Complexity:
+O(EF)
+
+For E = 2 and F = 100, the minimum number of droppings is 14

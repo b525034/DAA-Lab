@@ -1,0 +1,26 @@
+6.THE BEST TIME TO BE ALIVE
+
+For n scientists, there are 2n events:
+
+Birth = +1
+Death = -1
+
+All events are sorted according to their year. If birth and death occur in the same year, death is processed before birth.
+
+Sorting 2n events takes:
+
+O(n log n)
+
+After sorting, all events are scanned once, which takes:
+
+O(n)
+
+Therefore:
+
+Time Complexity:
+O(n log n)
+
+Space Complexity:
+O(n)
+
+The space is required to store the 2n events.

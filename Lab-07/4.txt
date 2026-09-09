@@ -1,0 +1,31 @@
+SECURITY SWITCHES
+
+Each switch can have two states: ON or OFF.
+
+Therefore, for n switches, there are:
+
+2^n
+
+possible configurations.
+
+The validation algorithm uses BFS and may visit all 2^n configurations.
+
+For every configuration, up to n switches are checked to determine the legal moves.
+
+Time Complexity:
+O(n * 2^n)
+
+Space Complexity:
+O(2^n)
+
+After deriving the direct formula:
+
+Minimum moves = floor(2^(n+1)/3)
+
+the result can be calculated directly.
+
+Optimized Time Complexity:
+O(1)
+
+Optimized Space Complexity:
+O(1)

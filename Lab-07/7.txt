@@ -1,0 +1,23 @@
+MATRIX CHAIN MULTIPLICATION
+
+Let DP[i][j] represent the minimum number of scalar multiplications required to multiply matrices Ai through Aj.
+
+The recurrence is:
+
+DP[i][j] = min(DP[i][k] + DP[k+1][j] + p[i-1]p[k]p[j])
+
+where k ranges from i to j-1.
+
+There are O(n^2) DP states.
+
+For each state, O(n) possible split points are checked.
+
+Therefore:
+
+Time Complexity:
+O(n^3)
+
+Space Complexity:
+O(n^2)
+
+The second table used to store the optimal split points also requires O(n^2) space.

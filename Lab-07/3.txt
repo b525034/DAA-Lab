@@ -1,0 +1,21 @@
+REVE'S PUZZLE
+
+Let DP[n] represent the minimum number of moves required to transfer n disks using four pegs.
+
+The recurrence is:
+
+DP[n] = min(2DP[k] + 2^(n-k) - 1)
+
+where k ranges from 1 to n-1.
+
+There are O(n) DP states.
+
+For each state, O(n) possible values of k are checked.
+
+Time Complexity:
+O(n^2)
+
+Space Complexity:
+O(n)
+
+For n = 8, the minimum number of moves is 33.
